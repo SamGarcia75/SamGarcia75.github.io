@@ -1,144 +1,18 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
         <head>
             <meta charset="UTF-8">
-            <style type="text/css">
-            /* GENERAL */
-*{
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: .9rem;
-    line-height: 1.5;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #9fa9ba;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-  }
-  
-  p{
-    margin: 0 0 1rem;
-  }
-  
-  h1{
-    margin: 0 0 1rem;
-    font-size: 2.5rem;
-    margin-bottom: .5rem;
-  }
-  
-  h2{
-    margin: 0 0 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  .text-blue{
-    color: #9ea5b0;
-  }
-  
-  .text-darkblue{
-    color: #002060;
-  }
-  
-  .text-uppercase{
-    text-transform: uppercase; 
-  }
-  
-  .icon{
-    margin-right: .5rem;
-  }
-  
-  .cv-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "left-column right-column right-column";
-    width: 1200px;
-    margin: 100px auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .section{
-    margin-bottom: 1.5rem;
-  }
-  
-  /* LEFT COLUMN */
-  .left-column{
-    grid-area: left-column;
-    padding: 50px;
-    background-color: #819e9e;
-    color: white;
-  }
-  
-  .portait{
-    border-radius: 50%;
-    max-width: 150px;
-    margin: auto;
-    display: block;
-    margin-bottom: 50px;
-  }
-  
-  .skills{
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    margin: 0 0 1rem;
-  }
-  
-  /* RIGHT COLUMN */
-  .right-column{
-    grid-area: right-column;
-    display: grid;
-    grid-template-rows: 250px 1fr;
-    grid-template-areas: 
-      "header"
-      "content";
-  }
-  
-  /* HEADER */
-  .header{
-    grid-area: header;
-    padding: 50px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .infos{
-    columns: 2;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* CONTENT */
-  .content{
-    grid-area: content;
-    padding: 50px;
-  }
-  
-  .experience-list{
-    list-style-type: circle;
-  }
-</style>
+            <link rel="stylesheet" href="cvsam.css"/>
+    
             <title>Curriculum Vitae</title>
         </head>
+        
         <body>
             <div class="cv-container">
                 <div class="left-column">
                     <img class="portrait"
-                    src="https://lco.legal/img/samuel-garcia.jpg" alt="Photo de CV" />
+                    src="https://lh3.googleusercontent.com/8XH-k-V94QycFxDF-iNFoseoNkrhRV-pKLYxO5_bnK-Mfd6kRdTtIGgsCe5fQNBF6BKx2nhfgDFGRrtuNlbogXN7YYG5mxFXc6TFKQ=w600" alt="Cryptopunk 5059" />
                
                     <div class="section">
                        <h2>Profil</h2>
@@ -155,6 +29,7 @@
                         </p>
                     </div>
                 </div>
+<!-- Colomne droite-->
 
             <div class="right-column">
                 <div class="header">   
@@ -163,12 +38,13 @@
                     <h1>Samuel Garcia</h1>
                     <p>Juriste Fintech/Crypto</p>
                 </div>
+
                 <div class="content"> <!-- XP PRO-->
                     <div class="section">
                         <br>
                         <h2>Expériences Professionnelles</h2>
                         <strong>Mars 2022-...</strong>
-                        <p>Juriste Fintech et Cryptoactif, <a href="https://hashtagavocats.com">L.Co Avocats</a> </p>
+                        <p>Juriste Fintech et Cryptoactif, <a href="https://lco.legal" title="Un super cabinet d'avocats !">L.Co Avocats</a> </p>
                         <ul class="experience-list">
                             <li>Audit juridique</li>
                             <li>Tokenomics</li>
@@ -181,7 +57,7 @@
                     <p>
                         <strong>Septembre 2021-Mars 2022</strong>
                         <br>
-                        Assistant DPO, <a href="https://www.mnhn.fr/fr">Museum National d'Histoire Naturelle</a> 
+                        Assistant DPO, <a href="https://www.mnhn.fr/fr" title="Un bien bel établissement">Museum National d'Histoire Naturelle</a> 
                     </p>
                     <ul class="experience-list">
                         <li>Mise en conformité RGPD : registre, AIDP...</li>
@@ -191,13 +67,14 @@
                         <p></p>
                         <strong>Mars 2020-Août 2021</strong>
                         <br>
-                        Juriste junior, <a href="https://hashtagavocats.com">Hashtag Avocats</a>
+                        Juriste junior, <a href="https://hashtagavocats.com"title="Premier amour...">Hashtag Avocats</a>
                     </p>
                     <ul class="experience-list">
                         <li>Pôle Corporate, Pôle IP/IT</li>
                         <li>Responsable du partenariat LegalTech</li>
                     </ul>
                     <br>
+
                 <div class="section">
                         <h2>Diplômes</h2>
                         <strong>2021-2023</strong> : Master 1, Droit de l'informatique en alternance, <a href="https://www.u-pec.fr/fr/formation/master-droit-du-numerique-parcours-informatique-et-droit">Université Paris-Est Créteil</a>
@@ -209,6 +86,7 @@
                         <strong>2018-2021</strong> : Licence Droit Public-Sciences Politiques,  <a href="https://www.icp.fr/formations/diplomes/licences/licence-droit-parcours-droit-et-science-politique#:~:text=et%20Science%20politique-,Présentation,Licence%20sélective%20et%20sur%20Parcoursup.">Institut Catholique de Paris</a>
                     <div class="section">
                         <br>
+
                         <h2>Divers</h2>
                         <ul class="experience-list">
                         <li>Président de l'association <strong>Solid'ère</strong></li>
@@ -217,36 +95,7 @@
                         <li>Contributeur pôle cryptoactifs à Horizons</li>
                     </ul>
                     </div>
-                
-               
-            
-                Expériences</p>
-                <ul>
-                    <li>L.co, cabinet d'avocats : Juriste Crypto/Fintech</li> <a href="https://lco.legal"></a><!-- Insérer date + lien web-->
-                    <li>Museum National d'Histoire Naturelle : Juriste assistant DPO <a href="https://www.mnhn.fr/fr"></a></li>
-                    <li>Hashtag Avocats : Juriste junior  <a href="https://hashtagavocats.com"></a></li>
-                    </li>
-                </ul>
-                <p class="head">Diplômes</p>
-                <ul>
-                    <li>Master 1 droit du numérique parcours Informatique et Droit, Université Paris XII  <a href="https://www.u-pec.fr/fr/formation/master-droit-du-numerique-parcours-informatique-et-droit"></a></li>
-                        <li>Diplôme universitaire de Droit et Technologies du Numérique, Université Paris II <a href="https://du-dtn.u-paris2.fr/fr"></a> </li> <!-- Insérer date + lien web-->
-                        <li>Bi-licence Droit Public-Sciences Politiques, Institut Catholique de Paris <a href="https://www.icp.fr/formations/diplomes/licences/licence-droit-parcours-droit-et-science-politique"></a>  </li>
-                        <li>Baccalauréat Economique et SocialLycée descartes</li>    
-                    </li>
-                </ul>
-                <p class="head">Divers </p>
-                <ul>
-                    <a href="https://fr.wikipedia.org/wiki/Baccalauréat_scientifique">
-                        <li></li>
-                    </a>
-                    <!--Link-->
-        
-                        <li><a href="https://www.cidj.com/etudes-formations-alternance/les-diplomes/licence-mass-mathematiques-appliquees-et-sciences-sociales">Licence MASS</a> (<a href="https://en.wikipedia.org/wiki/Paris_Diderot_University">Université Paris 7</a>)</li>
-            </div>
-    
-                </ul>
-            
+
             <div class="right"></div>
             <div id="footer">
                 <h2 id="name">Samuel Garcia</h2></div>
