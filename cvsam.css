@@ -1,0 +1,43 @@
+*{
+    margin : 10; 
+    box-sizing : border-box;
+}
+/*Le texte du corps de la page*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 0.99rem;
+    line-height: 1.4;
+}
+
+p{
+    margin: 0 0 1rem;
+}
+/*LE GROS TITRE*/
+h1{
+    margin: 0 0 1rem;
+    font-size: xx-large;
+    margin-bottom: .1rem;
+}
+/* Sous-TITRE*/
+h2{
+    margin: 0 0 1rem;
+    letter-spacing: 0;
+    text-transform:none;
+}
+
+/*le contenu du CV*/
+.cv-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; /* met le texte de la colomne de gauche dans la colonne */
+    grid-template-areas: "left-column right-column right-column";
+    width: 10px
+    margin: 100px auto;
+}
+
+.left-column{
+    grid-area: left-column;
+    padding: 50px;
+    background-color: #4c5d6c;
+    color: white;
+}
