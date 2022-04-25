@@ -1,9 +1,137 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
         <head>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="cv_ex.css">
+            <style type="text/css">
+            /* GENERAL */
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #4472C4;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  p{
+    margin: 0 0 1rem;
+  }
+  
+  h1{
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+  }
+  
+  h2{
+    margin: 0 0 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .text-blue{
+    color: #4472C4;
+  }
+  
+  .text-darkblue{
+    color: #002060;
+  }
+  
+  .text-uppercase{
+    text-transform: uppercase; 
+  }
+  
+  .icon{
+    margin-right: .5rem;
+  }
+  
+  .cv-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left-column right-column right-column";
+    width: 1200px;
+    margin: 100px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .section{
+    margin-bottom: 1.5rem;
+  }
+  
+  /* LEFT COLUMN */
+  .left-column{
+    grid-area: left-column;
+    padding: 50px;
+    background-color: #4472C4;
+    color: white;
+  }
+  
+  .portait{
+    border-radius: 50%;
+    max-width: 150px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  .skills{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 0 0 1rem;
+  }
+  
+  /* RIGHT COLUMN */
+  .right-column{
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas: 
+      "header"
+      "content";
+  }
+  
+  /* HEADER */
+  .header{
+    grid-area: header;
+    padding: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .infos{
+    columns: 2;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* CONTENT */
+  .content{
+    grid-area: content;
+    padding: 50px;
+  }
+  
+  .experience-list{
+    list-style-type: circle;
+  }
+</style>
             <title>Curriculum Vitae</title>
         </head>
         <body>
@@ -20,14 +148,11 @@
                            Après plusieurs expériences en cabinet d'avocats, j'envisage de poursuivre un docotrat en droit de la propriété intellectuelle à l'étranger.
                        </p> 
                        <p>
-                           Vous pouvez me contacter aux adresses suivantes : 
-                           <p>
-                        <a href="https://www.linkedin.com/in/samuelgarciapro/">Linkedin</a> <br>
+                           Vous pouvez me contacter aux adresses suivantes :
+                           <li>Linkedin<a href="https://www.linkedin.com/in/samuelgarciapro/">Linkedin</a></li>
+                        <li>mail : samuelgarciadtn@gmail.com <a href ="mailto:samuelgarciadtn@gmail.com">samuelgarciadtn@gmail.com</a>
+                        Téléphone : 0633186820
                         </p>
-                           Mail : <a href ="mailto:samuelgarciadtn@gmail.com">samuelgarciadtn@gmail.com</a>
-                           <br>
-                           Téléphone : 0633186820
-                       </p>
                     </div>
                 </div>
 
@@ -82,6 +207,15 @@
                         <br>
                         <br>
                         <strong>2018-2021</strong> : Licence Droit Public-Sciences Politiques,  <a href="https://www.icp.fr/formations/diplomes/licences/licence-droit-parcours-droit-et-science-politique#:~:text=et%20Science%20politique-,Présentation,Licence%20sélective%20et%20sur%20Parcoursup.">Institut Catholique de Paris</a>
+                    <div class="section">
+                        <br>
+                        <h2>Divers</h2>
+                        <ul class="experience-list">
+                        <li>Président de l'association <strong>Solid'ère</strong></li>
+                        <li>Responsable de la Revue IP/IT du DU DTN</li>
+                        <li>Membre du pôle données et cybersécurité à Assas Legal Innovation</li>
+                        <li>Contributeur pôle cryptoactifs à Horizons =</li>
+                    </ul>
                     </div>
                 
                
