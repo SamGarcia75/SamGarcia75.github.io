@@ -31,23 +31,29 @@ h2{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr; /* met le texte de la colomne de gauche dans la colonne */
     grid-template-areas: "left-column right-column right-column";
-    width: 10px
-    margin: 100px auto;
+    width: 1200px;
+    margin-top: 40;
+}
+
+.section{
+    margin-bottom: 1.5rem;
 }
 
 .left-column{
     grid-area: left-column;
-    padding: 50px;
+    padding: 100px;
     background-color: #4c5d6c;
     color: white;
+    margin-top: 180;
 }
 
-.portait{
+.portrait{
     border-radius: 0%;
     max-width: 150px;
     margin: auto;
     display: block;
     margin-bottom: 50px;
+    margin-top: 10;
   }
 .right-column{
     grid-area: right-column;
@@ -56,4 +62,27 @@ h2{
     grid-template-areas: 
       "header"
       "content";
+  }
+  .content{
+      grid-area: content;
+      padding: 50px;
+  }
+
+  #top1{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 0px;
+      width: 100%;
+      height: 200px;
+      padding: 0px;
+      margin-top: 0;
+  }
+  #top2{
+      position:absolute;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      height: 6cm;
+      padding-bottom: 100px;
   }
