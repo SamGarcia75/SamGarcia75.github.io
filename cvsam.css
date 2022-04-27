@@ -72,7 +72,7 @@ h2{
       padding: 50px;
   }
 
-  #top1{
+  #top1{ /*bannière*/
       position: absolute;
       top: 10px;
       left: 0px;
