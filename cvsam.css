@@ -50,7 +50,7 @@ h2{
     margin-top: 180;
 }
 
-.portrait{
+.portrait{ /* Modifie l'image que j'ai intégré un portrait du CV */
     border-radius: 0%;
     max-width: 150px;
     margin: auto;
