@@ -1,0 +1,92 @@
+*{
+    margin : 0; 
+    box-sizing : border-box;
+}
+/*Le texte du corps de la page*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem; /*taille de la police*/
+    line-height: 1.5;/*interligne*/
+}
+
+p{
+    margin: 0 0 1rem;
+}
+/*LE GROS TITRE*/
+h1{
+    margin: 0 0 1rem;
+    font-size: xx-large;
+    margin-bottom: .1rem;
+}
+/* Sous-TITRE*/
+h2{
+    margin: 0 0 1rem;
+    letter-spacing: 0;
+}
+
+/*le contenu du CV*/
+.cv-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; /* détermine la place de la colonne de gauche */
+    grid-template-areas: "left-column right-column right-column";
+    width: 1200px;
+    margin-top: 150px;
+}
+
+.section{
+    margin-bottom: 1.5rem;
+}
+
+.intro{
+    padding-top: 0px;
+    margin-top: 0%;
+}
+
+.left-column{
+    grid-area: left-column;
+    padding: 100px;
+    background-color: #4c5d6c;
+    color: white;
+    margin-top: 180;
+}
+
+.portrait{ /* Modifie l'image que j'ai intégré un portrait du CV */
+    border-radius: 0%;
+    max-width: 150px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+.right-column{
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: 60px 1fr; /* Hauteur de la grid de la colonne droite, permet d'avoir un écart correct entre bannière et corps */
+    grid-template-areas: 
+      "header"
+      "content";
+  }
+  .content{
+      margin-top: 0px;
+      grid-area: content;
+      padding: 50px;
+  }
+
+  #top1{ /*bannière*/
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      right: 0px;
+      width: 130%; /*largeur de la bannière, 130 car 130 en bas et que 100 ne remplit pas tout*/
+      height: 6cm;
+      padding: 0px;
+      margin-top: 2%;
+  }
+  #top2{
+      position:absolute;
+      left: 0px;
+      right: 0px;
+      width: 130%;
+      height: 6cm;
+      padding-bottom: 100px;
+  }
